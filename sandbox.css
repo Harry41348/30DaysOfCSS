@@ -43,3 +43,11 @@ h4 {
 .content{
     padding: 5rem;
 }
+
+code {
+    padding: .5rem .7rem;
+    display: inline-block;
+    background-color: #f39c12;
+    box-shadow: inset 0px 0px .3rem 0px rgba(0,0,0,.8);
+    border-radius: .3rem;
+}

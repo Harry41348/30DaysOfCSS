@@ -1,0 +1,48 @@
+/* ========================================
+
+    CODE YOUR STYLES BELOW!
+
+   ====================================== */
+
+@media print {
+
+    
+
+    /* HIDE UNWANTED ELEMENTS */
+    .sandbox::before,
+    img {
+        display: none;
+    }
+
+    .sandbox {
+        max-width: 100%;
+        margin: 0;
+        text-align: left;
+        font-size: 16pt;
+        background: none;
+    }
+
+    /* GLOBAL TYPOGRAPHY RESET */
+    body {
+        font-family: Georgia, serif;
+        font-size: 16pt;
+        line-height: 24pt;
+        background: none;
+        color: #000;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* LAYOUT RESET */
+
+    .content,
+    section,
+    footer {
+        width: 100%;
+        border: none;
+        padding: 0;
+        margin: 0;
+        color: #000;
+    }
+
+}
