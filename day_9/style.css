@@ -1,0 +1,159 @@
+/* ========================================
+
+    CODE YOUR STYLES BELOW!
+
+   ====================================== */
+
+/*
+    Colour primary light: #29E3AB
+    Colour primary: #2ECC71
+    Colour primary dark: #29E342
+*/
+
+section:not(:last-of-type) {
+    margin-bottom: 10rem;
+}
+
+section > *:not(h4) {
+    box-sizing: border-box;
+    background-color: #29E3AB80;
+    padding: 1rem;
+    margin: 1rem .5rem;
+    border-radius: .5rem;
+    border: solid 1px #3C992F;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+li {
+    float: left;
+    margin: 0 1rem;
+}
+
+li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+
+li a:hover {
+    color: #555;
+    text-decoration: underline;
+}
+
+/* -- Layout 1 -- */
+
+.layout1 article {
+    width: 57%;
+    float: left;
+}
+
+.layout1 aside {
+    width: 40%;
+    float: right;
+}
+
+.layout1 footer {
+    clear: both;
+}
+
+
+/* -- Layout 2 -- */
+
+.layout2 header .logo {
+    width: 20%;
+    float: left;
+    margin: 0;
+}
+
+.layout2 header nav {
+    width: 78%;
+    float: right;
+    margin: 0;
+}
+
+/* Simple way to clearfix */
+
+.layout2 header::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.layout2 article {
+    width: 50%;
+    margin-left: 2%;
+    float: left;
+}
+
+.layout2 aside.sidenav {
+    width: 22%;
+    float: left;
+}
+
+.layout2 aside.sidebar {
+    width: 22%;
+    float: right;
+}
+
+.layout2 footer {
+    clear: both;
+}
+
+
+/* -- Layout 3 -- */
+
+.layout3 header .logo {
+    width: 20%;
+    height: auto;
+    float: right;
+    margin: 0;
+}
+
+.layout3 header nav {
+    width: 77%;
+    float: left;
+    margin: 0;
+}
+
+.layout3 ul {
+    float: left;
+}
+
+.layout3 header::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.layout3 article {
+    width: 31%;
+    padding: 2rem 1rem 0 1rem;
+    box-sizing: border-box;
+    float: left;
+    margin: 0 2% 0 0;
+}
+
+.layout3 article:last-child {
+    margin: 0;
+}
+
+.layout3 .articles::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.layout3::after {
+    display: table;
+    content: "";
+    clear: both;
+}
