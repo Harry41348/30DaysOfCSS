@@ -5,3 +5,29 @@
    ====================================== */
 
 /* --  -- */
+
+.sandbox img {
+    transition: all .3s ease-in-out;
+}
+
+    .sandbox img:hover {
+        cursor: crosshair;
+        filter: none;
+        transform: scale(1.1) translateY(-.5rem);
+    }
+
+.grayscale {
+    filter: grayscale(1);
+}
+
+.blur {
+    filter: blur(5px);
+}
+
+.invert {
+    filter: invert();
+}
+
+.sepia {
+    filter: sepia(1);
+}
