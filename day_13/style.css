@@ -1,0 +1,32 @@
+/* ========================================
+
+    CODE YOUR STYLES BELOW!
+
+   ====================================== */
+
+/* -- STICKY FOOTER -- */
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.page-content {
+    min-height: 100%;
+
+    margin-bottom: -12rem;
+}
+
+.page-content::after {
+    content: "";
+    display: block
+}
+
+footer, .page-content::after {
+    height: 12rem;
+}
+
+footer :is(div) {
+    font-size: 3rem;
+    text-align: center;
+}

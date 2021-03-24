@@ -51,3 +51,95 @@ code {
     box-shadow: inset 0px 0px .3rem 0px rgba(0,0,0,.8);
     border-radius: .3rem;
 }
+
+footer {
+    margin: inherit;
+    width: inherit;
+    color: inherit;
+    font-size: inherit;
+}
+
+.sticky-footer-lesson footer {
+    margin-top: 2rem;
+    position: relative;
+    background: #e7eef1;
+    padding: 40px 40px 60px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    color: #333;
+}
+
+    .sticky-footer-lesson footer a:link {
+        color: #e12345;
+    }
+
+footer {
+    width: 60%;
+    max-width: 960px;
+    margin: 0 auto;
+    font-size: 1rem;
+    color: #f29baa;
+}
+    
+    footer a:link,
+    footer a:visited {
+        position: relative;
+        display: inline-block;
+        background: rgba(255,255,255, 0.2);
+        padding: 0 5px;
+        border: none;
+        text-decoration: none;
+        color: white;
+    }
+
+    footer a:hover {
+    background: rgba(255,255,255, 0.4);
+    box-shadow: -3px 3px 0 #eb2447;
+    transform: rotate(-1deg);
+    }
+
+footer .made-by, footer .course, footer .copyright {
+    padding-left: 70px;
+    transition: all ease 1000ms;
+}
+
+footer #logo {
+    position: relative;
+    z-index: 9;
+    opacity: .4;
+    float: left;
+    margin-right: 15px;
+    padding: 0;
+    background: none;
+    flex-direction: row;
+    box-shadow: none;
+    transition: all ease 1000ms;
+}
+
+footer #logo img {
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all ease 1000ms;
+}
+
+    footer:hover #logo_codecollege {
+        width: 100px;
+    }
+
+    footer:hover #logo_bg-yellow {
+        width: 80px;
+        transform: translateX(-10px) translateY(10px) translateZ(-10px);
+    }
+
+    footer:hover #logo_bg-gray {
+        transform: translateX(-20px) translateY(20px) translateZ(-20px);
+    }
+
+    footer:hover #logo {
+        opacity: 1;
+        transform: perspective(400px) rotateX(40deg) rotateY(20deg) rotateZ(-25deg) translateX(0) translateY(0px) translateZ(0);
+    }
+
+    footer:hover .made-by, footer:hover .course, footer:hover .copyright {
+        padding-left: 140px;
+    }
